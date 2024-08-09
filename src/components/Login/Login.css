@@ -1,0 +1,119 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f2fa;
+}
+
+.LoginContainer {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 300px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.LoginContainer h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.LoginContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.LoginContainer label {
+    font-weight: bold;
+}
+
+.LoginContainer input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.LoginContainer .error {
+    color: #dd0000;
+    margin-bottom: 10px;
+    height: 20px; /* Reserve space for the error message */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden; /* Make the container invisible when there is no error */
+}
+
+.LoginContainer .error.show {
+    visibility: visible; /* Make the container visible when there is an error */
+}
+.buttons{
+    display: flex;
+    gap:10px;
+}
+
+.LoginContainer button[type="submit"],
+.LoginContainer button[type="signup"] {
+    align-self: left;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+}
+
+.LoginContainer button[type="submit"]:hover {
+    background-color: #c9c9c9;
+    cursor: pointer;
+}
+
+.LoginContainer button[type="submit"] #active {
+    background-color: #c9c9c9;
+}
+
+.LoginContainer button[type="signup"]:hover {
+    background-color: #c9c9c9;
+    cursor: pointer;
+}
+
+.LoginContainer button[type="signup"] #active {
+    background-color: #c9c9c9;
+}
+
+.LoginContainer .forgot-password {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.LoginContainer .forgot-password:hover {
+    text-decoration: none;
+}

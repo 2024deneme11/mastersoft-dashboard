@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f2fa;
+    overflow: hidden;
+}
+.App{
+   width: 100vw;
+   height: 100vh;
+   background-color: white;
+   overflow: hidden;
+   position: relative;
+} 
+
